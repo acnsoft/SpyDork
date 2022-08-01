@@ -49,72 +49,72 @@ x = input(">>> ")
 if x == '1':
    while True:
       try:
-         url = input("\033[96mEnter a country's domain extension:\033[0m ") # asks for the domain extension which the dorks should use
+         url = input("\033[96mEnter a country's domain extension:\033[0m ")
          if not url:
-            raise ValueError # raises an error if the input is left empty
+            raise ValueError 
 
-         f = open("Latest Dorks.txt", "w+", encoding='utf8') # creates the file 
-         countrydomain = sqldork.replace("countrydomain", "site:" + url) # replaces the "countrydomain" in dorklist.py with the entered input
-         f.write(countrydomain) # writes the dorks in the "Latest Dorks" file
+         f = open("Latest Dorks.txt", "w+", encoding='utf8')
+         countrydomain = sqldork.replace("countrydomain", "site:" + url)
+         f.write(countrydomain)
 
          print("Dorks saved to \"Latest Dorks.txt\"")
          done = input("Press \"Enter\" to exit")
          sys.exit()
 
       except ValueError:
-            print("\033[91mError: Please enter a valid domain extension!") # prints the error 
+            print("\033[91mError: Please enter a valid domain extension!")
 
 if x == '2':
    while True:
       try:
-         url = input("\033[96mEnter a country's domain extension:\033[0m ") # asks for the domain extension which the dorks should use
+         url = input("\033[96mEnter a country's domain extension:\033[0m ")
          if not url:
             raise ValueError # raises an error if the input is left empty
 
-         f = open("Latest Dorks.txt", "w+", encoding='utf8') # creates the file 
-         countrydomain = wordpressdork.replace("countrydomain", "site:" + url) # replaces the "countrydomain" in dorklist.py with the entered input
-         f.write(countrydomain) # writes the dorks in the "Latest Dorks" file
+         f = open("Latest Dorks.txt", "w+", encoding='utf8')
+         countrydomain = wordpressdork.replace("countrydomain", "site:" + url)
+         f.write(countrydomain)
 
          print("Dorks saved to \"Latest Dorks.txt\"")
          done = input("Press \"Enter\" to exit")
          sys.exit()
 
       except ValueError:
-            print("\033[91mError: Please enter a valid domain extension!") # prints the error 
+            print("\033[91mError: Please enter a valid domain extension!")
 
 if x == '3':
    while True:
       try:
-         url = input("\033[96mEnter a country's domain extension:\033[0m ") # asks for the domain extension which the dorks should use
+         url = input("\033[96mEnter a country's domain extension:\033[0m ")
          if not url:
-            raise ValueError # raises an error if the input is left empty
+            raise ValueError
 
-         f = open("Latest Dorks.txt", "w+", encoding='utf8') # creates the file 
-         countrydomain = fileuplouddork.replace("countrydomain", "site:" + url) # replaces the "countrydomain" in dorklist.py with the entered input
-         f.write(countrydomain) # writes the dorks in the "Latest Dorks" file
+         f = open("Latest Dorks.txt", "w+", encoding='utf8')
+         countrydomain = fileuplouddork.replace("countrydomain", "site:" + url)
+         f.write(countrydomain)
 
          print("Dorks saved to \"Latest Dorks.txt\"")
          done = input("Press \"Enter\" to exit")
          sys.exit()
 
       except ValueError:
-            print("\033[91mError: Please enter a valid domain extension!") # prints the error 
+            print("\033[91mError: Please enter a valid domain extension!") 
 
 
 if x == '4':
    while True:
       try:
-         url = input("\033[96mEnter a country's domain extension:\033[0m ") # asks for the domain extension which the dorks should use
+         url = input("\033[96mEnter a country's domain extension:\033[0m ")
          if not url:
-            raise ValueError # raises an error if the input is left empty
+            raise ValueError
 
-         f = open("Latest Dorks.txt", "w+", encoding='utf8') # creates the file 
-         countrydomain = bypassdork.replace("countrydomain", "site:" + url) # replaces the "countrydomain" in dorklist.py with the entered input
-         f.write(countrydomain) # writes the dorks in the "Latest Dorks" file
+         f = open("Latest Dorks.txt", "w+", encoding='utf8')
+         countrydomain = bypassdork.replace("countrydomain", "site:" + url)
+         f.write(countrydomain)
 
          print("Dorks saved to \"Latest Dorks.txt\"")
          done = input("Press \"Enter\" to exit")
          sys.exit()
 
       except ValueError:
-            print("\033[91mError: Please enter a valid domain extension!") # prints the error 
+            print("\033[91mError: Please enter a valid domain extension!")
